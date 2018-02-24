@@ -26,9 +26,9 @@ RUN \
  apk add --no-cache \
 	ca-certificates && \
  echo "**** compile cardigann ****" && \
- git clone https://github.com/cardigann/cardigann.git ${CARDIGANN_DIR} && \
+ git clone https://github.com/vidschofelix/cardigann.git ${CARDIGANN_DIR} && \
  git clone https://github.com/creationix/nvm.git /root/.nvm && \
- git -C $CARDIGANN_DIR checkout $(git -C $CARDIGANN_DIR describe --tags --candidates=1 --abbrev=0) && \
+
  cd ${CARDIGANN_DIR}/web && \
  npm install && \
  cd ${CARDIGANN_DIR} && \
